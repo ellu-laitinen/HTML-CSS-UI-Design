@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  padding: 2rem;
+  line-height: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header div img {
+  width: 14rem;
+}
+
+header {
+  background: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: orangered;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  color: BLACK;
+  padding: 1rem;
+  margin: 2rem;
+}
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+  padding-bottom: 0.9rem;
+}
+
+#home {
+  padding: 5rem;
+  background: url("https://source.unsplash.com/v9bnfMCyKbg") no-repeat fixed
+    center center/cover;
+  height: 25rem;
+  position: relative;
+}
+
+.container {
+  padding: 1rem;
+  padding-top: 2rem;
+  background-color: rgba(228, 124, 141, 0.25);
+  width: 28rem;
+  padding: 1rem;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3rem;
+}
+
+#about {
+  width: 100%;
+  background-color: whitesmoke;
+  height: 300px;
+  text-align: left;
+  padding: 30px;
+  font-size: 1rem;
+}
+
+#about p {
+  font-size: 0.8rem;
+}
+
+#about img {
+  width: 24rem;
+  border-radius: 10px;
+  overflow: auto;
+  float: right;
+  margin-left: 20px;
+}
+
+.container button {
+  width: 30%;
+  background: rgb(245, 190, 118);
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #a7a7a7;
+}
+
+.container button:hover {
+  background: rgb(236, 69, 9);
+  color: white;
+}
+
+.form_group {
+  margin-bottom: 0.6 rem;
+  padding: 0.6rem;
+  padding-left: 1rem;
+}
+
+.form_group label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.form_group input {
+  margin-right: 1rem;
+  display: table;
+}
+
+.text,
+.contact,
+.form_group,
+.form_group_2,
+h3 {
+  background: rgb(68, 66, 66);
+  color: white;
+}
+
+.text {
+  width: 50%;
+  float: right;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 1px;
+  font-size: 0.8rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.form_group_2 {
+  margin-bottom: 0.6 rem;
+  padding: 0.6rem;
+  padding-left: 2rem;
+}
+
+.form_group_2 label {
+  display: table;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.form_group_2 input {
+  margin-right: 1rem;
+}
+
+.form_group_2 button {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #a7a7a7;
+  width: 50px;
+  height: 20px;
+}
+
+h3 {
+  padding-left: 1rem;
+}
