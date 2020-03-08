@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  font-family: "EB Garamond", "serif";
+  background: cornsilk;
+  line-height: 2rem;
+}
+
+h1 {
+  font-family: "Source Sand Pro", sans-serif;
+  font-size: 32px;
+}
