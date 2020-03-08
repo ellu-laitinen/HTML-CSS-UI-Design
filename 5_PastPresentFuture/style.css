@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Indie Flower";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  float: left;
+  text-decoration: none;
+  color: rgb(110, 5, 5);
+  padding-top: 10px;
+}
+
+header {
+  background: wheat;
+  text-align: right;
+  width: 100%;
+  padding: 25px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  font-size: x-large;
+}
+ /*header ul li a {
+  padding: 15px;
+  color: white;
+} */
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#past,
+#present,
+#future,
+#contacts {
+  height: 15x;
+  width: 100%;
+  padding: 10px;
+  line-height: 1.6rem;
+}
+
+#past {
+  background: url("https://source.unsplash.com/CoD2Q92UaEg") no-repeat fixed
+    center center/cover;
+  color: rgb(20, 16, 37);
+}
+
+#present {
+  background: rgba(202, 110, 23, 0.212);
+}
+
+#future {
+  background: url("https://source.unsplash.com/Hgv-ryJgpcM") no-repeat fixed
+    center center/cover;
+  color: rgb(41, 23, 6);
+}
+
+#contacts {
+  background: rgba(202, 110, 23, 0.212);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 15px;
+  color: rgb(71, 41, 2);
+} 
+nav ul li a:hover {
+  background-color: brown;
+  border-radius: 10px;
+}
+
+img {
+  width: 300px;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  background: wheat;
+  text-align: center;
+  color: rgb(71, 41, 2);
+  padding: 30px;
+  font-size: x-large;
+}
+
+body:after {
+  content: "&copy; me";
+}
