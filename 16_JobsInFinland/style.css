@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 1rem;
+  
+}
+
+header h1 {
+  grid-column: 1;
+  color: #022ca5;
+  font-weight: 1000;
+}
+
+header .link {
+  grid-column: 6;
+  color: #022ca5;
+  font-size: 14px;
+}
+
+.fas {
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.link a {
+  color: #022ca5;
+}
+
+nav {
+  background-color: #022ca5;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+  margin-top: 2px;
+  width: 100%;
+  z-index: 1;
+  padding-left: 3rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li:hover {
+  border-bottom: white solid 2px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+nav .fas {
+  float: right;
+  font-size: 12px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+nav ul li .dropdown {
+background: white;
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+  color: #022ca5;
+  margin-top: 5px;
+}
+
+nav ul li .dropdown li {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+nav ul li .dropdown a {
+  color: #022ca5;
+  text-transform: none;
+}
+
+.jobs {
+  border-bottom: white solid 2px;
+  padding-bottom: 5px;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  color: white;
+  position: relative;
+  display: grid;
+}
+
+.hero::before {
+  background: url("https://source.unsplash.com/g1Kr4Ozfoac") no-repeat fixed
+  center center/cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+.hero::after {
+  background-color: #022ca5;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.job-txt {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  text-transform: uppercase;
+  height: 100%;
+
+}
+
+.job-txt h2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row: 2;
+  font-size: 5rem;
+  font-weight: 1000;
+
+}
+
+.job-txt p {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 4 / span 2;
+  line-height: 2rem;
+}
+
+.category {
+  margin: 3rem;
+}
+.category h2, .region h2 {
+  color: #022ca5;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.category p, .region p {
+  line-height: 1.5rem;
+  margin: 2rem auto;
+  
+}
+
+.categ-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.item {
+  width: 15vw;
+  height: 15vw;
+  background: #022ca5;
+  color: white;
+  text-transform: uppercase;
+  font-size: 26px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  display: grid;
+  align-items: flex-end;
+  justify-items: center;
+  transition: ease-in 0.2s;
+  text-shadow: 0 0 10px black;
+  padding-bottom: 2rem;
+  
+}
+
+.item:hover {
+  text-decoration: underline;
+  cursor: pointer; 
+
+  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.322);
+  
+}
+
+.admin {
+  background:  url("https://source.unsplash.com/nJdwUHmaY8A"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.academic {
+  background:  url("https://source.unsplash.com/OvXht_wi5Ew"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.engineer {
+  background:  url("https://source.unsplash.com/3GZi6OpSDcY"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.finance {
+  background:  url("https://source.unsplash.com/hpjSkU2UYSU"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.health {
+  background:  url("https://source.unsplash.com/DK8jXx1B-1c"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.hospitality {
+  background:  url("https://source.unsplash.com/b37mDyPzdJM"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.hr {
+  background:  url("https://source.unsplash.com/K0c8ko3e6AA"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.ict {
+  background:  url("https://source.unsplash.com/68ZlATaVYIo"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.manufact {
+  background:  url("https://source.unsplash.com/i4ABHj811N0"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.market {
+  background:  url("https://source.unsplash.com/yktK2qaiVHI"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.management {
+  background:  url("https://source.unsplash.com/5aiRb5f464A"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+.service {
+  background:  url("https://source.unsplash.com/hEC6zxdFF0M"); 
+  background-size: cover;
+ background-position: center center;
+}
+
+#map {
+  background-color: #022ca5;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  margin: 2rem auto;
+  font-size: 16px;
+}
+
+#map:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.region {
+  margin: 3rem;
+
+}
+
+.region-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.turku {
+  background:  url("https://source.unsplash.com/t4aQJwzlDi0"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.hki {
+  background:  url("https://source.unsplash.com/For4352Fgwg"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.espoo {
+  background:  url("https://source.unsplash.com/iBjO3rbIHtg"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.tampere {
+  background:  url("https://source.unsplash.com/2UbKl7Nc2ks"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.oulu {
+  background:  url("https://source.unsplash.com/VjiY5dOmNXk"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.coast {
+  background:  url("https://source.unsplash.com/_FZywW6NsMw"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.kuopio {
+  background:  url("https://source.unsplash.com/WxrBjrqAh0w"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+.jyväskylä {
+  background:  url("https://source.unsplash.com/1nBvotYiZQI"); 
+   background-size: cover;
+  background-position: center center;
+}
+
+footer {
+  background: #022ca5;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 3rem;
+}
+
+.jif {
+  grid-row: 1;
+  text-transform: uppercase;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.links a {
+  font-weight: bold;
+}
+
+.contact { 
+  font-weight: bold;
+  grid-column: 4;
+  grid-row: 1;
+
+}
+.scroll-top-btn {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  right: 20px; 
+  opacity: 0.6;
+
+}
+.scroll-top-btn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 50px;
+  color: #022ca5;
+
+}
+
+.scroll-top-btn:hover {
+  cursor: pointer;
+}
+
+
